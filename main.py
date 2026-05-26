@@ -27,6 +27,8 @@ try:
             users = yaml.load(f, Loader=yaml.FullLoader)
     assert users["ASYNC"] in [0, 1], "ASYNC参数错误"
     assert users["LIKE_CD"] >= 0, "LIKE_CD参数错误"
+    assert users.get("LIKE_TIMES_SYNC", 30) >= 0, "LIKE_TIMES_SYNC参数错误"
+    assert users.get("LIKE_TIMES_ASYNC", 35) >= 0, "LIKE_TIMES_ASYNC参数错误"
     # assert users['SHARE_CD'] >= 0, "SHARE_CD参数错误"
     assert users["DANMAKU_CD"] >= 0, "DANMAKU_CD参数错误"
     assert users["WATCHINGLIVE"] >= 0, "WATCHINGLIVE参数错误"
@@ -34,6 +36,8 @@ try:
     config = {
         "ASYNC": users["ASYNC"],
         "LIKE_CD": users["LIKE_CD"],
+        "LIKE_TIMES_SYNC": users.get("LIKE_TIMES_SYNC", 30),
+        "LIKE_TIMES_ASYNC": users.get("LIKE_TIMES_ASYNC", 35),
         # "SHARE_CD": users['SHARE_CD'],
         "DANMAKU_CD": users["DANMAKU_CD"],
         "WATCHINGLIVE": users["WATCHINGLIVE"],

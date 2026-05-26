@@ -53,7 +53,7 @@
 
 ## 历史 Star 数
 
-[![Stargazers over time](https://starchart.cc/XiaoMiku01/fansMedalHelper.svg)](https://starchart.cc/XiaoMiku01/fansMedalHelper)
+[![Stargazers over time](https://starchart.cc/Xiaoqianghepipi/fansMedalHelper.svg)](https://starchart.cc/Xiaoqianghepipi/fansMedalHelper)
 
 ### 赞助
 
