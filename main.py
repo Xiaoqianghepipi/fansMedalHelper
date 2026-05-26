@@ -31,6 +31,7 @@ try:
     assert users.get("LIKE_TIMES_ASYNC", 35) >= 0, "LIKE_TIMES_ASYNC参数错误"
     # assert users['SHARE_CD'] >= 0, "SHARE_CD参数错误"
     assert users["DANMAKU_CD"] >= 0, "DANMAKU_CD参数错误"
+    assert users.get("DANMAKU_TIMES", 1) >= 0, "DANMAKU_TIMES参数错误"
     assert users["WATCHINGLIVE"] >= 0, "WATCHINGLIVE参数错误"
     assert users["WEARMEDAL"] in [0, 1], "WEARMEDAL参数错误"
     config = {
@@ -40,6 +41,7 @@ try:
         "LIKE_TIMES_ASYNC": users.get("LIKE_TIMES_ASYNC", 35),
         # "SHARE_CD": users['SHARE_CD'],
         "DANMAKU_CD": users["DANMAKU_CD"],
+        "DANMAKU_TIMES": users.get("DANMAKU_TIMES", 1),
         "WATCHINGLIVE": users["WATCHINGLIVE"],
         "WEARMEDAL": users["WEARMEDAL"],
         "SIGNINGROUP": users.get("SIGNINGROUP", 2),
